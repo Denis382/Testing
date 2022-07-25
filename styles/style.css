@@ -77,10 +77,10 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     left: 0;
     width: 100%;
     height: 100vh;
-    background-image: url(../Images/fixed.jpeg);
+    background-image: url(../Images/back-fixed.JPG);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: right;
     z-index: -1;
 }
 .fixed-image-price{
@@ -130,7 +130,11 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
         font-size: 17px !important;
     }
 }
-
+@media (min-width: 768px) {
+    .main-price{
+        margin: 80px 15%;
+    }
+}
 .Price-title{
     font-size: 55px;
     text-align: center;
