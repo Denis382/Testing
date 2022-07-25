@@ -58,7 +58,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     height: calc(100% + 50px);
     background-image: url(../Images/fixed.jpeg);
     background-repeat: no-repeat;
-    background-size: 36%;
+    background-size: cover;
     background-position: center;
     z-index: -1;
 }
