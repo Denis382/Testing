@@ -60,7 +60,12 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 }
 .scroller::before{
     position: absolute;
-    content: '+';
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    border-radius: 50px;
+    top: 49%;
     left: -12px;
     font-weight: bold;
 }
@@ -76,7 +81,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(100vh + 50px);
+    height: 100vh;
     background-image: url(../Images/back-fixed.JPG);
     background-repeat: no-repeat;
     background-size: cover;
@@ -132,6 +137,9 @@ img{
     .category-title{
         margin: 32px 0;
         font-size: 17px !important;
+    }
+    .fixed{
+        padding: 24px 16px 0 !important;
     }
 }
 @media (min-width: 768px) {
