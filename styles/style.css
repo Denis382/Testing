@@ -127,7 +127,6 @@ img{
         font-weight: bold;
     }
     span{
-        min-width: 50px !important;
         font-size: 13px !important;
         white-space: nowrap;
     }
@@ -238,7 +237,6 @@ img{
 }
 
 span{
-    min-width: 200px;
     text-align: start;
     font-family: "Playfair-regular", sans-serif;
 }
