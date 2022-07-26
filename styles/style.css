@@ -234,6 +234,19 @@ img{
     text-transform: lowercase;
     font-family: "Dancing-regular";
     font-size: 24px;
+    animation: animation-text 3s linear infinite;
+}
+
+@keyframes animation-text {
+    0%{
+        transform: scale(.9);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(.9);
+    }
 }
 
 span{
