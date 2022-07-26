@@ -44,6 +44,12 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     src: url(../fonts/PlayfairDisplaySC-Regular.ttf)  format("truetype");
     font-style: normal;
     font-weight: normal;
+  }
+  @font-face {
+    font-family: "Dancing-regular";
+    src: url(../fonts/DancingScript-Regular.ttf)  format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
 /* Header and nav bar styles*/
@@ -74,7 +80,6 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     align-items: center;
     justify-content: center;
     position: relative; 
-    widht: 100%;
 }
 .fixed-image{
     position: fixed;
@@ -151,11 +156,10 @@ img{
 .Price-title{
     font-size: 55px;
     text-align: center;
-    margin-top: 56px;
+    margin-top: 26px;
     color: #2f2f2f;
     font-family: "Playfair-regular";
     font-weight: 600;
-    z-index: 999;
 }
 .fixed{
     padding: 32px 20px 0;
@@ -207,6 +211,30 @@ img{
     top: -40px;
     left: 15%;
     background-color: #1f1f1f;
+}
+.title-row{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.title-row::before{
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    bottom: -35px;
+    left: 15%;
+    background-color: #1f1f1f;
+}
+.title-row::after{
+    content: 'soft beauty room';
+    position: absolute;
+    right: 16px;
+    bottom: -10px;
+    color: #fff;
+    text-transform: lowercase;
+    font-family: "Dancing-regular";
+    font-size: 24px;
 }
 
 span{
