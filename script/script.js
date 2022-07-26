@@ -12,6 +12,13 @@ const hardLevel = document.querySelector(".hard-level")
 const hairBraiding = document.querySelector(".hair-braiding")
 const hairCut = document.querySelector(".haircut")
 const mensHaircut = document.querySelector(".mens-haircut")
+const HairStraightening = document.querySelector(".Hair-straightening")
+const SpaForHair = document.querySelector(".spa-for-hair")
+const HairPaint = document.querySelector('.hair-paint')
+const HairPaintClient = document.querySelector(".hair-paint-client")
+const highlighting = document.querySelector(".highlighting")
+const manicure = document.querySelector(".manicure")
+const solarium = document.querySelector(".solarium")
 
 const womanHairCut = document.getElementById('1');
 const hairStylingScroll = document.getElementById('2')
@@ -20,6 +27,14 @@ const hardLevelScroll = document.getElementById("4")
 const hairBraidingScroll = document.getElementById("5")
 const hairCutScroll = document.getElementById("6")
 const mensHaircutScroll = document.getElementById("7")
+const HairStraighteningScroll = document.getElementById("8")
+const SpaForHairScroll = document.getElementById("9")
+const hairPaintScroll = document.getElementById("10")
+const hairPaintClientScroll = document.getElementById("11")
+const highlightingScroll = document.getElementById("12")
+const manicureScroll = document.getElementById("13")
+const solariumScroll = document.getElementById("14")
+
 
 function handleButtonClick() {
     haircut.scrollIntoView({block: "center", behavior: "smooth"});
@@ -42,10 +57,40 @@ function hairCutYakor() {
 function mensHaircutYakor() {
     mensHaircut.scrollIntoView({block: "center", behavior: "smooth"});
 }
+function HairStraighteningYakor (){
+    HairStraightening.scrollIntoView({block: "center", behavior: "smooth"});
+}
+function SpaForHairYakor (){
+    SpaForHair.scrollIntoView({block: "center", behavior: "smooth"});
+}
+function HairPaintYakor (){
+    HairPaint.scrollIntoView({block: "center", behavior: "smooth"});
+}
+function HairPaintClientYakor (){
+    HairPaintClient.scrollIntoView({block: "center", behavior: "smooth"});
+}
+function highlightingYakor (){
+    highlighting.scrollIntoView({block: "center", behavior: "smooth"});
+}
+function manicureYakor (){
+    manicure.scrollIntoView({block: "center", behavior: "smooth"});
+}
+function solariumYakor (){
+    solarium.scrollIntoView({block: "center", behavior: "smooth"});
+}
+
+
 womanHairCut.addEventListener('click', handleButtonClick);
 hairStylingScroll.addEventListener('click', hairStylingYakor);
 hairTwistScroll.addEventListener('click', hairTwistYakor);
 hardLevelScroll.addEventListener('click', hardLevelYakor);
 hairBraidingScroll.addEventListener('click', hairBraidingYakor);
 hairCutScroll.addEventListener('click', hairCutYakor);
-mensHaircutScroll.addEventListener('click', mensHaircutYakor)
+mensHaircutScroll.addEventListener('click', mensHaircutYakor);
+HairStraighteningScroll.addEventListener('click', HairStraighteningYakor);
+SpaForHairScroll.addEventListener('click', SpaForHairYakor);
+hairPaintScroll.addEventListener('click', HairPaintYakor);
+hairPaintClientScroll.addEventListener('click', HairPaintClientYakor);
+highlightingScroll.addEventListener('click', highlightingYakor);
+manicureScroll.addEventListener('click', manicureYakor);
+solariumScroll.addEventListener('click', solariumYakor);
