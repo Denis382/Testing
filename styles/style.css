@@ -34,8 +34,8 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 
 @font-face {
-    font-family: "Ibarra-regular";
-    src: url(../fonts/IbarraRealNova-Regular.ttf)  format("truetype");
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.ttf)  format("truetype");
     font-style: normal;
     font-weight: normal;
   }
@@ -178,7 +178,7 @@ img{
     margin: 20px;
     position: relative;
     opacity: 0;
-    font-family: "Playfair-regular", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 /*.service-photo{
@@ -230,9 +230,11 @@ img{
     position: absolute;
     right: 16px;
     bottom: -10px;
-    color: #fff;
     text-transform: lowercase;
     font-family: "Dancing-regular";
+    color: #fff;
+    /*-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
     font-size: 24px;
     animation: animation-text 3s linear infinite;
 }
@@ -251,5 +253,33 @@ img{
 
 span{
     text-align: start;
-    font-family: "Playfair-regular", sans-serif;
+    font-family: "Raleway", sans-serif;
+}
+.little-haircut{
+    margin-bottom: 40px;
+}
+.nails{
+    font-weight: 600;
+    font-family: "Raleway",sans-serif;
+    padding: 8px;
+}
+.nail-title{
+    padding-left: 12px;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    margin-left: 16px;
+}
+.nail-title::before{
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #000;
+    left: -3px;
+    top: 25%;
+}
+.bold-text{
+    padding: 16px 0;
 }
