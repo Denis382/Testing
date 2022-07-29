@@ -47,7 +47,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
   }
   @font-face {
     font-family: "Dancing-regular";
-    src: url(../fonts/DancingScript-Regular.ttf)  format("truetype");
+    src: url(../fonts/DancingScript-VariableFont_wght.ttf)  format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -148,6 +148,14 @@ img{
     .fixed{
         padding: 24px 16px 0 !important;
     }
+    .title-row::after{
+        font-size: 22px !important;
+        right: 10px !important;
+    }
+    .nails{
+        padding: 8px !important;
+        font-size: 14px !important;
+    }
 }
 @media (min-width: 768px) {
     .main-price{
@@ -230,14 +238,14 @@ img{
 .title-row::after{
     content: 'soft beauty room';
     position: absolute;
-    right: 16px;
+    right: 20%;
     bottom: -10px;
     text-transform: lowercase;
     font-family: "Dancing-regular";
     color: #fff;
     /*-webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
-    font-size: 24px;
+    font-size: 34px;
     animation: animation-text 3s linear infinite;
 }
 
@@ -263,7 +271,8 @@ span{
 .nails{
     font-weight: 600;
     font-family: "Raleway",sans-serif;
-    padding: 8px;
+    padding: 16px;
+    font-size: 18px;
 }
 .nail-title{
     padding-left: 12px;
