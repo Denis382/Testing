@@ -65,6 +65,9 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     user-select: none;
     font-family: "Playfair-regular", sans-serif;
 }
+
+
+
 .scroller::before{
     position: absolute;
     content: '';
@@ -210,13 +213,20 @@ img{
     z-index: 1;
     background-color: #000;
     border-radius: 50px;
-    cursor: pointer;
     color: #fff;
     display: flex;
     align-items: center;
     content: 'Photo';
     transition: .3s ease;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;   
+    -khtml-user-select: none;    
+    -moz-user-select: none;      
+    -ms-user-select: none;       
+    user-select: none;
+    font-family: "Playfair-regular", sans-serif;
 }
+
 .btn-active{
     background-color: #fff;
     color: #000;
