@@ -119,7 +119,7 @@ img{
     position: relative;
     background-color: rgba(255, 255, 255, .3);
     padding-bottom: 56px;
-    transition: .4s ease-in;
+    transition: .3s ease-in;
 }
 
 @media (max-width: 767px) {
@@ -163,11 +163,11 @@ img{
     }
     .parallax-right{
         right: 1% !important;
-        transition: .1s ease !important;
+        transition: .1s linear !important;
     }
     .parallax-left{
         left: 1% !important;
-        transition: .1s ease !important;
+        transition: .1s linear !important;
     }
     .gallery-right-photo{
         max-width: 260px !important;
@@ -191,7 +191,9 @@ img{
         right: 15% !important;
     }
 }
-
+.gallery-left-photo{
+    animation-delay: .1s;
+}
 .hidden{
     opacity: 0;
 }
