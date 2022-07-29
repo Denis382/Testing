@@ -94,3 +94,60 @@ hairPaintClientScroll.addEventListener('click', HairPaintClientYakor);
 highlightingScroll.addEventListener('click', highlightingYakor);
 manicureScroll.addEventListener('click', manicureYakor);
 solariumScroll.addEventListener('click', solariumYakor);
+
+// parallax block, array and function
+
+var previewBlock = document.getElementsByTagName('body')
+
+var parallaxImageRight = document.querySelector('.parallax-right')
+var parallaxImageleft = document.querySelectorAll('.parallax-left')
+
+let arrayParallaxRight = [document.querySelectorAll('.parallax-right')]
+let arrayParallaxLeft = [document.querySelectorAll('.parallax-left')]
+
+let arrayLeftSecondLvl = arrayParallaxLeft[0]
+let arrayRightSecondLvl = arrayParallaxRight[0]
+
+console.log(arrayParallaxRight)
+console.log(arrayRightSecondLvl)
+//console.log(arrayThirdLvl)
+
+let userScrollAnimation;
+
+function userScrollTitle () {
+    userScrollRight = window.scrollY / 10;
+    userScrollleft = window.scrollY / 6;
+    for (let i = 0; i < arrayRightSecondLvl.length; i++) {
+        arrayRightSecondLvl[i].style.transform = `translateY(${-userScrollRight}`+'px)'
+      }
+      for (let i = 0; i < arrayLeftSecondLvl.length; i++) {
+        arrayLeftSecondLvl[i].style.transform = `translateY(${-userScrollleft}`+'px)'
+      }
+
+    userScrollAnimation = requestAnimationFrame(userScrollTitle);
+    //console.log(userScrollRight)
+}
+userScrollTitle(0);
+
+    //gallery look
+
+const galleryBtn = document.querySelector('.gallery-btn')
+let arrayImages = [document.querySelectorAll('.image-parallax')]
+let arrayImagesSecondLvl = arrayImages[0]
+
+
+let mainPage = document.querySelector('.main-price')
+
+function addACtive(){
+    if (event.target.closest('.gallery-btn')){
+        event.target.classList.toggle('btn-active')
+        mainPage.classList.toggle('hidden-visibility')
+        for (let i = 0; i < arrayLeftSecondLvl.length; i++) {
+            arrayLeftSecondLvl[i].classList.toggle('gallery-left-photo')
+          }
+          for (let i = 0; i < arrayRightSecondLvl.length; i++) {
+            arrayRightSecondLvl[i].classList.toggle('gallery-right-photo')
+          }
+    }
+};
+galleryBtn.addEventListener('click', addACtive)
