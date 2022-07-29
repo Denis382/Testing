@@ -294,3 +294,35 @@ span{
 .bold-text{
     padding: 16px 0;
 }
+.complex-box{
+    margin: 40px 0;
+    position: relative;
+}
+.complex-box::before{
+    position: absolute;
+    content: '';
+    width: 70%;
+    height: 2px;
+    background-color: #000;
+    top: -20px;
+    left: 15%;
+}
+.complex-box::after{
+    position: absolute;
+    content: '';
+    width: 70%;
+    height: 2px;
+    background-color: #000;
+    bottom: -20px;
+    left: 15%;
+}
+.complex-title{
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    padding: 0 0 12px;
+}
+.complex-service{
+    font-size: 10px;
+    font-weight: 600;
+}
