@@ -1,16 +1,16 @@
 const preloaderPage = document.querySelector('.preloader')
 const DomPage = document.getElementsByTagName('html')
 
-window.onload = function preloadingContent (){
+window.onload = function (){
     preloaderPage.classList.add('preloader-hidden') 
 }
 
-function preloaderFunc () {
+/*function preloaderFunc () {
     preloaderPage.classList.add('preloader-hidden')
 }
 
 document.addEventListener("DOMContentLoaded", preloaderFunc)
-
+*/
 gsap.to(document.querySelectorAll('.service-row'),{
     opacity: 1,
     stagger: .1,
