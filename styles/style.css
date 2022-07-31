@@ -203,6 +203,9 @@ img{
         max-width: 260px !important;
         left: 5% !important;
     }
+    .preloader-text{
+        font-size: 40px !important;
+    }
 }
 @media (min-width: 768px) {
     .main-price{
