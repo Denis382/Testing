@@ -2,6 +2,8 @@ const preloaderPage = document.querySelector('.preloader')
 const DomPage = document.getElementsByTagName('html')
 
 function preloaderFunc () {
+    window.onload =
+
     preloaderPage.classList.add('preloader-hidden')
 }
 
