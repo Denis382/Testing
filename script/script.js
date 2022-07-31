@@ -1,13 +1,11 @@
-const preloader = document.querySelector('.preloader')
+const preloaderPage = document.querySelector('.preloader')
+const DomPage = document.getElementsByTagName('html')
 
 function preloaderFunc () {
-    if (event.target.closest('.preloader')){
-        event.target.classList.add('.preloader-hidden')
-    }
+    preloaderPage.classList.add('preloader-hidden')
 }
 
-preloader.addEventListener('DOMContentLoaded', preloaderFunc)
-
+document.addEventListener("DOMContentLoaded", preloaderFunc)
 
 gsap.to(document.querySelectorAll('.service-row'),{
     opacity: 1,
@@ -15,6 +13,7 @@ gsap.to(document.querySelectorAll('.service-row'),{
     duration: .4,
     opacity: 1
 })
+
 const haircut = document.querySelector(".woman-haircut");
 const hairStyling = document.querySelector(".hair-styling");
 const hairTwist = document.querySelector(".hair-twist")
@@ -118,8 +117,8 @@ let arrayParallaxLeft = [document.querySelectorAll('.parallax-left')]
 let arrayLeftSecondLvl = arrayParallaxLeft[0]
 let arrayRightSecondLvl = arrayParallaxRight[0]
 
-console.log(arrayParallaxRight)
-console.log(arrayRightSecondLvl)
+//console.log(arrayParallaxRight)
+//console.log(arrayRightSecondLvl)
 //console.log(arrayThirdLvl)
 
 let userScrollAnimation;
@@ -161,3 +160,4 @@ function addACtive(){
     }
 };
 galleryBtn.addEventListener('click', addACtive)
+
