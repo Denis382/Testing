@@ -1,3 +1,13 @@
+const preloader = document.querySelector('.preloader')
+
+function preloaderFunc () {
+    if (event.target.closest('.preloader')){
+        event.target.classList.add('.preloader-hidden')
+    }
+}
+
+preloader.addEventListener('DOMContentLoaded', preloaderFunc)
+
 
 gsap.to(document.querySelectorAll('.service-row'),{
     opacity: 1,
