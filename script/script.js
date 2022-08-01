@@ -1,16 +1,10 @@
 const preloaderPage = document.querySelector('.preloader')
-const DomPage = document.getElementsByTagName('html')
+const preloaderContent = document.querySelector('.preloader-mask')
 
 window.onload = function (){
     preloaderPage.classList.add('preloader-hidden') 
 }
 
-/*function preloaderFunc () {
-    preloaderPage.classList.add('preloader-hidden')
-}
-
-document.addEventListener("DOMContentLoaded", preloaderFunc)
-*/
 gsap.to(document.querySelectorAll('.service-row'),{
     opacity: 1,
     stagger: .1,
@@ -145,9 +139,11 @@ userScrollTitle(0);
     //gallery look
 
 const galleryBtn = document.querySelector('.gallery-btn')
-let arrayImages = [document.querySelectorAll('.image-parallax')]
+let arrayImages = [document.querySelectorAll('.photos-box-right')]
+let arrayImagesLeft = [document.querySelectorAll('.photos-box-left')]
+let arrayImagesSecondLvlLeft = arrayImagesLeft[0]
 let arrayImagesSecondLvl = arrayImages[0]
-
+console.log(arrayImagesSecondLvl)
 
 let mainPage = document.querySelector('.main-price')
 
@@ -156,12 +152,12 @@ function addACtive(){
         event.target.classList.toggle('btn-active')
         mainPage.classList.toggle('hidden-visibility')
         for (let i = 0; i < arrayLeftSecondLvl.length; i++) {
-            arrayLeftSecondLvl[i].classList.toggle('gallery-left-photo')
-          }
-          for (let i = 0; i < arrayRightSecondLvl.length; i++) {
-            arrayRightSecondLvl[i].classList.toggle('gallery-right-photo')
-          }
+            arrayImagesSecondLvl[i].classList.toggle('gallery-left-photo')
+        }
+        for (let i = 0; i < arrayRightSecondLvl.length; i++) {
+             arrayImagesSecondLvlLeft[i].classList.toggle('gallery-right-photo')
+        }
     }
 };
-galleryBtn.addEventListener('click', addACtive)
 
+galleryBtn.addEventListener('click', addACtive)

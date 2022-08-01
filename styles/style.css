@@ -67,11 +67,15 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 }
 .preloader-hidden{
     transform: translateX(100%);
+    /*transition-delay: 4s;*/
 }
 
 .preloader-text{
     font-size: 116px;
     color: #fff;
+    position: relative;
+}
+.preloader-content{
     position: relative;
 }
 
@@ -89,8 +93,6 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     font-family: "Playfair-regular", sans-serif;
 }
 
-
-
 .scroller::before{
     position: absolute;
     content: '';
@@ -102,12 +104,18 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     left: -12px;
     font-weight: bold;
 }
-.main-fixed{
-    display: flex ;
-    align-items: center;
-    justify-content: center;
-    position: relative; 
+
+
+.gallery-fixed{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
+
 .fixed-image{
     position: fixed;
     content: '';
@@ -137,6 +145,12 @@ img{
     width: 100%;
     height: 100%;
 }
+.main-fixed{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+}
 .main-price{
     margin: 80px 25%;
     width: 100%;
@@ -148,78 +162,6 @@ img{
     transition: .3s ease-in;
 }
 
-@media (max-width: 767px) {
-    .main-price{
-        margin: 80px 5.5%; 
-    }
-    .Price-title{
-        font-size: 40px !important;
-        font-weight: bold;
-    }
-    span{
-        white-space: nowrap;
-    }
-    .service-row{
-        margin: 8px !important;
-        font-size: 12px !important;
-    }
-    .scroller{
-        font-size: 16px !important;
-    }
-    .category-title{
-        margin: 32px 0;
-        font-size: 17px !important;
-    }
-    .fixed{
-        padding: 24px 16px 0 !important;
-    }
-    .title-row::after{
-        font-size: 22px !important;
-        right: 10px !important;
-    }
-    .nails{
-        padding: 8px !important;
-        font-size: 14px !important;
-    }.complex-service{
-        font-size: 12px !important;
-        font-weight: 600 !important;
-    }
-    .image-parallax{
-        max-width: 160px !important;
-    }
-    .parallax-right{
-        right: 1% !important;
-        transition: .1s linear !important;
-    }
-    .parallax-left{
-        left: 1% !important;
-        transition: .1s linear !important;
-    }
-    .gallery-right-photo{
-        max-width: 260px !important;
-        right: 5% !important;
-    }
-    .gallery-left-photo{
-        max-width: 260px !important;
-        left: 5% !important;
-    }
-    .preloader-text{
-        font-size: 40px !important;
-    }
-}
-@media (min-width: 768px) {
-    .main-price{
-        margin: 80px 15%;
-    }
-    .gallery-left-photo{
-        max-width: 400px !important;
-        left: 15% !important;
-    }
-    .gallery-right-photo{
-        max-width: 400px !important;
-        right: 15% !important;
-    }
-}
 .gallery-left-photo{
     animation-delay: .1s;
 }
@@ -259,9 +201,16 @@ img{
 }
 
 .image-parallax{
-    max-width: 260px;
     position: absolute;
     transition: .5s ease;
+}
+.photos-box-right{
+    max-width: 260px;
+    transition: .3s ease;
+}
+.photos-box-left{
+    max-width: 260px;
+    transition: .3s ease;
 }
 .parallax-right{
     top: 5%;
@@ -446,4 +395,72 @@ span{
 .complex-service{
     font-size: 15px;
     font-weight: 600;
+}
+@media (max-width: 767px) {
+    .main-price{
+        margin: 80px 5.5%; 
+    }
+    .Price-title{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    span{
+        white-space: nowrap;
+    }
+    .service-row{
+        margin: 8px;
+        font-size: 12px;
+    }
+    .scroller{
+        font-size: 16px;
+    }
+    .category-title{
+        margin: 32px 0;
+        font-size: 17px;
+    }
+    .fixed{
+        padding: 24px 16px 0;
+    }
+    .title-row::after{
+        font-size: 22px;
+        right: 10px;
+    }
+    .nails{
+        padding: 8px;
+        font-size: 14px;
+    }.complex-service{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .image-parallax{
+        max-width: 160px;
+    }
+    .parallax-right{
+        right: 1%;
+        transition: .1s linear;
+    }
+    .parallax-left{
+        left: 1% ;
+        transition: .1s linear;
+    }
+    .gallery-right-photo{
+        transform: translateX(50px) scale(1.5);
+    }
+    .gallery-left-photo{
+        transform: translateX(-50px) scale(1.5);
+    }
+    .preloader-text{
+        font-size: 40px ;
+    }
+}
+@media (min-width: 768px) {
+    .main-price{
+        margin: 80px 15%;
+    }
+    .gallery-left-photo{
+        transform:translateX(-260px) scale(1.5);
+    }
+    .gallery-right-photo{
+        transform: translateX(260px) scale(1.5);
+    }
 }
