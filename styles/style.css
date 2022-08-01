@@ -170,7 +170,6 @@ img{
 }
 .hidden-visibility{
     opacity: 0;
-    visibility: hidden;
 }
 .gallery-btn{
     min-width: 32px;
@@ -458,9 +457,12 @@ span{
         margin: 80px 15%;
     }
     .gallery-left-photo{
-        transform:translateX(-260px) scale(1.5);
+        transform:translateX(-200px) scale(1.5);
     }
     .gallery-right-photo{
-        transform: translateX(260px) scale(1.5);
+        transform: translateX(200px) scale(1.5);
+    }
+    .preloader-text{
+        font-size: 56px;
     }
 }
