@@ -201,15 +201,16 @@ img{
 
 .image-parallax{
     position: absolute;
-    transition: .5s ease;
 }
 .photos-box-right{
     max-width: 260px;
-    transition: .1s linear;
+    transition: .2s ease-in-out;
+    transition-delay: .2s;
 }
 .photos-box-left{
     max-width: 260px;
-    transition: .1s linear;
+    transition: .2s ease-in-out;
+    transition-delay: .2s;
 }
 .parallax-right{
     top: 5%;
