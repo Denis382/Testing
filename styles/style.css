@@ -206,11 +206,11 @@ img{
 }
 .photos-box-right{
     max-width: 260px;
-    transition: .3s ease;
+    transition: .1s linear;
 }
 .photos-box-left{
     max-width: 260px;
-    transition: .3s ease;
+    transition: .1s linear;
 }
 .parallax-right{
     top: 5%;
