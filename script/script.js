@@ -115,9 +115,7 @@ let arrayParallaxLeft = [document.querySelectorAll('.parallax-left')]
 let arrayLeftSecondLvl = arrayParallaxLeft[0]
 let arrayRightSecondLvl = arrayParallaxRight[0]
 
-//console.log(arrayParallaxRight)
 //console.log(arrayRightSecondLvl)
-//console.log(arrayThirdLvl)
 
 let userScrollAnimation;
 
@@ -139,11 +137,6 @@ userScrollTitle(0);
     //gallery look
 
 const galleryBtn = document.querySelector('.gallery-btn')
-let arrayImages = [document.querySelectorAll('.photos-box-right')]
-let arrayImagesLeft = [document.querySelectorAll('.photos-box-left')]
-let arrayImagesSecondLvlLeft = arrayImagesLeft[0]
-let arrayImagesSecondLvl = arrayImages[0]
-console.log(arrayImagesSecondLvl)
 
 let mainPage = document.querySelector('.main-price')
 
@@ -152,10 +145,10 @@ function addACtive(){
         event.target.classList.toggle('btn-active')
         mainPage.classList.toggle('hidden-visibility')
         for (let i = 0; i < arrayLeftSecondLvl.length; i++) {
-            arrayImagesSecondLvl[i].classList.toggle('gallery-left-photo')
+            arrayLeftSecondLvl[i].classList.toggle('gallery-left-photo')
         }
         for (let i = 0; i < arrayRightSecondLvl.length; i++) {
-             arrayImagesSecondLvlLeft[i].classList.toggle('gallery-right-photo')
+            arrayRightSecondLvl[i].classList.toggle('gallery-right-photo')
         }
     }
 };
