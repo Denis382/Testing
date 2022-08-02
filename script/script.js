@@ -106,8 +106,6 @@ solariumScroll.addEventListener('click', solariumYakor);
 
 var previewBlock = document.getElementsByTagName('body')
 
-var parallaxImageRight = document.querySelector('.parallax-right')
-var parallaxImageleft = document.querySelectorAll('.parallax-left')
 
 let arrayParallaxRight = [document.querySelectorAll('.parallax-right')]
 let arrayParallaxLeft = [document.querySelectorAll('.parallax-left')]
@@ -115,15 +113,15 @@ let arrayParallaxLeft = [document.querySelectorAll('.parallax-left')]
 let arrayLeftSecondLvl = arrayParallaxLeft[0]
 let arrayRightSecondLvl = arrayParallaxRight[0]
 
-//console.log(arrayRightSecondLvl)
 
 let userScrollAnimation;
+console.log(document.clientHeight)
 
 function userScrollTitle () {
-    userScrollRight = window.scrollY / 10;
-    userScrollleft = window.scrollY / 6;
+    userScrollRight = window.pageYOffset / 10;
+    userScrollleft = window.pageYOffset / 6;
     for (let i = 0; i < arrayRightSecondLvl.length; i++) {
-        arrayRightSecondLvl[i].style.transform = `translateY(${-userScrollRight}`+'px)'
+        arrayRightSecondLvl[i].style.transform = `translateY(${-userScrollRight}px)`
       }
       for (let i = 0; i < arrayLeftSecondLvl.length; i++) {
         arrayLeftSecondLvl[i].style.transform = `translateY(${-userScrollleft}`+'px)'
@@ -135,6 +133,8 @@ function userScrollTitle () {
 userScrollTitle(0);
 
     //gallery look
+
+    
 
 const galleryBtn = document.querySelector('.gallery-btn')
 

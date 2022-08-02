@@ -107,8 +107,6 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 
 
 .gallery-fixed{
-    display: flex;
-    flex-direction: column;
     position: absolute;
     top: 0;
     left: 0;
@@ -199,7 +197,7 @@ img{
 .image-parallax{
     position: absolute;
     max-width: 260px;
-    transition: .3s ease;
+    transition: .3s linear;
 }
 
 .parallax-right{
@@ -428,11 +426,9 @@ span{
     }
     .parallax-right{
         right: 1%;
-        transition: .1s linear;
     }
     .parallax-left{
         left: 1% ;
-        transition: .1s linear;
     }
     .gallery-right-photo{
         max-width: 260px;
